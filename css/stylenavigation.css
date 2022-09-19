@@ -1,0 +1,253 @@
+/* main styling */
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 6px;
+    color: white;
+    background-size: cover;
+  }
+  
+  
+  header {
+    background: #F898A4;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+  }
+  
+  .content {
+    position: relative;
+    top: 10em;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .menu {
+    float: right;
+  }
+  
+  .show-menu {
+    width: 10%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    
+  }
+  
+  /* navigation */
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #F898A4;
+  }
+  
+  li {
+    float: left;
+  }
+  li a,
+  .dropdown-btn {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+  }
+  
+  li a:hover,
+  .dropdown:hover .dropdown-btn {
+    background-color: #fefefe;
+    color: #F898A4;
+  }
+  
+  li.dropdown {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    width: 20%;
+    position: absolute;
+    background-color: #F3D8D1;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    padding: 18px 22px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #fefefe;
+    color: #218380;
+  }
+  
+  
+  /* menu will only display on hover */
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+  
+  /* media queries for responsiveness */
+  
+  @media only screen and (max-width: 640px) {
+   
+    /* open and close toggle  */
+    nav ul {
+      height: 0;
+    }
+  
+    .show {
+      height: 18em;
+    }
+  
+    /*  moves the content down the screen to give way to the nav  */
+    .move {
+      position: relative;
+      top: 22em;
+    }
+  
+    /*  nav items  */
+    nav ul,
+    nav:active ul {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+    }
+  
+    nav ul li {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  
+    .dropdown-menu {
+      display: block;
+    }
+  
+    /* hides the 'More' link and instead shows all the hidden link   */
+    .more {
+      display: none;
+    }
+  
+    /* hover styling   */
+    li a:hover,
+    .dropdown:hover {
+      width: 100%;
+      text-align: left;
+      display: block;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 15px;
+    font-size: 30px;
+  
+  }
+  .scc-box h4 {
+      background: #0168b3 url(http://mmhimages.fnistools.com/images/RECos/1252/img/box-bg.png);
+      margin: 0;
+      padding: 5px;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 24px;
+      width: 350px;
+      text-align: center;
+      
+  }
+  .scc-box p {
+    background: #72a9d0 url(http://mmhimages.fnistools.com/images/RECos/1252/img/box-bg.png);
+    margin: 0;
+    padding: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    width: 350px;
+    text-align: center;
+  }
+  .scc-box-1 h4 {
+    background: #916848 url(http://mmhimages.fnistools.com/images/RECos/1252/img/box-bg.png);
+    margin: 0;
+    padding: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    width: 800px;
+    text-align: center;
+    
+}
+.scc-box-1 p {
+  background: #B3A188 url(http://mmhimages.fnistools.com/images/RECos/1252/img/box-bg.png);
+  margin: 0;
+  padding: 5px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  width: 800px;
+  text-align: center;
+}
+
+aside{
+    padding: 80px;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+}
+.pulse-button {
+    position: relative;
+    margin: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 1.3em;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: #F898A4;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(#d63d4e, .5);
+  }
+
